@@ -17,7 +17,7 @@ python3 BeamPropagation.py input.csv
 `
 
 The csv file conains the following parameters:
-* fixed simulation parameters: number of points grid ($N$) and size of the gride ($L$) in one dimension;
+* fixed simulation parameters: number of points grid ($N$) and size of the gride ($L$) along each dimension;
 * input beam parameters:beam waist (w)), orders ($m, n$) of the Hermite-Gaussian mode, and potical wavelength (lam);
 * physical simulation parameter: propagation distance (dist).
 
@@ -31,12 +31,17 @@ Overlap after 0.5mm of propagation: 0.9598
 For Gaussian mode ($m=0, n=0$), it also shows the discrepancy with the analytical value. Here is an example:
 
 ```
+Input: wavelength: 1.55um, waist: 40.0um, Hermite-Gaussian (0,0) mode  
+Overlap after 0.5mm of propagation: 0.9941   
+Discrepancy with analytical value for Gaussian mode: 0.00%
 ```
 
-
-
-
 # Numerical method
+
+We have developed the script based on the Fast-Fourier-Transform (FFT) based direct integration numerical method presented in section 3 of Ref. [^1]. The propagated mode is computed as a discrete linear convolution between initial mode and the impulse response. Both initial mode and the propagated mode are sampled to $N\times N$ equidistant grids of size $L\times L$. The impulse response depends on the optical wavelength and the propagation distance. 
+
+The script contains five(5) functions:
+
 
 | ![image](img1.png) |
 |:--:|
