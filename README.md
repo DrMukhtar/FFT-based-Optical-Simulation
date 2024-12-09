@@ -11,15 +11,15 @@ As a simplest representative example, I present here a simulation of a Hermite-G
 
 
 # Practical information
-This repository... ...To the script in terminal  
+This repository contains the processing script and a configuration file. The processing script is written in Python (BeamPropagation.py) and the configuration file is provided as csv file (example: input.csv). To the script in terminal  
 `
 python3 BeamPropagation.py input.csv
 `
 
-...parameters:
+The csv file conains the following parameters:
 * fixed simulation parameters: number of points grid ($N$) and size of the gride ($L$) in one dimension;
-* input beam parameters:...
-* ...
+* input beam parameters:beam waist (w)), orders ($m, n$) of the Hermite-Gaussian mode, and potical wavelength (lam);
+* physical simulation parameter: propagation distance (dist).
 
 
 
