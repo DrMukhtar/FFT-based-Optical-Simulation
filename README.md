@@ -46,15 +46,17 @@ The script contains five(5) functions:
 
 2. Function `Ht` returns the impulse response as $(2N-1)\times(2N-1)$ matrix (see Eq. 2 in the mentioned reference).
 
-3. Function $So$ returns the simulated propagated mode. It involves padding the initial mode into $(2N-1)\times(2N-1)$ equidistant grids (noted $U$) and then convoluting it with the impulse response matrix (noted $H$) by means of a two-dimensional FFT (noted FFT2 and IFFT2 for its inverse). The simulated propagated mode is given by the N\times N lower right submatrix of the following 
+3. Function $So$ returns the simulated propagated mode. It involves padding the initial mode into $(2N-1)\times(2N-1)$ equidistant grids (noted $U$) and then convoluting it with the impulse response matrix (noted $H$) by means of a two-dimensional FFT (noted FFT2 and IFFT2 for its inverse). The simulated propagated mode is given by the $N\times N$ lower right submatrix of the following 
 
-$$$
+$$
 S=\text{IFFT2}\left[\text{FFT2}\left(U\right)\cdot\times\text{FFT2}\left(H\right)\right]\left(L/N\right)^{2}.
-$$$
+$$
 
-4. Function \text{Overlap} returns the overlap as the squared dot product between the initial mode and the propagated mode.
+4. Function `\text{Overlap}` returns the overlap as the squared dot product between the initial mode and the propagated mode.
 
-5. Function \text{OverlapGauss} returns the expected overlap for the case of Gaussian mode.
+5. Function `\text{OverlapGauss}` returns the expected overlap for the case of Gaussian mode.
+
+We make the simulation more realistic by choosing \text{\ensuremath{\mu}m} as unit for spatial parameters. Typically, `lam` is around one and w0 is around a hundred; we have tested the simulations for N=1000 and L=200.
 
 | ![image](img1.png) |
 |:--:|
