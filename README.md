@@ -42,6 +42,19 @@ We have developed the script based on the Fast-Fourier-Transform (FFT) based dir
 
 The script contains five(5) functions:
 
+1. Function `hermiteGauss2D` returns the sampled initial Hermite Gaussian mode centered at the center of the grids.
+
+2. Function `Ht` returns the impulse response as $(2N-1)\times(2N-1)$ matrix (see Eq. 2 in the mentioned reference).
+
+3. Function $So$ returns the simulated propagated mode. It involves padding the initial mode into $(2N-1)\times(2N-1)$ equidistant grids (noted $U$) and then convoluting it with the impulse response matrix (noted $H$) by means of a two-dimensional FFT (noted FFT2 and IFFT2 for its inverse). The simulated propagated mode is given by the N\times N lower right submatrix of the following 
+
+$$$
+S=\text{IFFT2}\left[\text{FFT2}\left(U\right)\cdot\times\text{FFT2}\left(H\right)\right]\left(L/N\right)^{2}.
+$$$
+
+4. Function \text{Overlap} returns the overlap as the squared dot product between the initial mode and the propagated mode.
+
+5. Function \text{OverlapGauss} returns the expected overlap for the case of Gaussian mode.
 
 | ![image](img1.png) |
 |:--:|
