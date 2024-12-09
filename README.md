@@ -73,7 +73,7 @@ where $s=\text{dist}/z_{R}$ and $j=\sqrt{-1}$. Figure 1 depicts the overlaps for
 |:--:|
 | Figure 1: The overlap between the initial mode and the propagated mode obtained from the simulation (points) and analytical results (line). |
 
-| ![image](img1.png) |
+| ![image](img2.png) |
 |:--:|
 | Figure 2: The corresponding discrepancy; distance is normalized by the Rayleigh length (3.24 mm). |
 
