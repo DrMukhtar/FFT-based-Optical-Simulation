@@ -2,6 +2,7 @@ FFT-based simulation of beam propagation
 =================================  
 Musawwadah Mukhtar, PhD  
 https://github.com/DrMukhtar  
+linkedin.com/in/drmukhtar/
 
 Here I present the simulation of beam propagation based on a scientific paper "Fast-Fourier-transform based numerical integration method for the Rayleigh-Sommerfeld formula"[^1].
 
