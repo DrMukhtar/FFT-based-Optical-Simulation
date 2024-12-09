@@ -66,12 +66,25 @@ $$
 \frac{4\left(1+s^{2}\right)}{\left|2+s^{2}-js\right|^{2}},
 $$
 
-where $s=\text{dist}/z_{R}$ and $j=\sqrt{-1}$.Figure [example] depicts the overlaps for different propagation distances obtained from both simulation and analytical results; `lam=1.55`, `w0=40`. The discrepancy is weak for distance smaller than the Rayleigh length ($\pi\text{w0}^{2}/\text{lam}$).
+where $s=\text{dist}/z_{R}$ and $j=\sqrt{-1}$. Figure 1 depicts the overlaps for different propagation distances obtained from both simulation and analytical results; `lam=1.55`, `w0=40`. As shown if Fig. 2, the discrepancy is weak for distance smaller than the Rayleigh length ($\pi\text{w0}^{2}/\text{lam}$).
 
 | ![image](img1.png) |
 |:--:|
-| [example]: #fig-anchor "The overlap between the initial mode and the propagated mode obtained from the simulation (points) and analytical results (line)" |
+| Figure 1: The overlap between the initial mode and the propagated mode obtained from the simulation (points) and analytical results (line). |
+
+| ![image](img1.png) |
+|:--:|
+| Figure 2: The corresponding discrepancy; distance is normalized by the Rayleigh length (3.24 mm). |
+
+Besides, FFT is efficient for N being multiple of small prime numbers [^2], $O(N\log N)$. For this simulation method, the FFT applied to grids of $(2N-1)\times(2N-1)$ points. When N is a multiple of small prime numbers, $(2N-1)$ unlikely fulfills the condition. The effect would not be tangible for $N$ around 1000. It would be interesting to study the efficiency of the method for high value of $N$. 
+
+
 # Conclusion
+We have successfully developed numerical simulation of beam propagation based on method presented in Ref. [^1]. We have calculated the overlap between the original mode and the propagated mode. We have also verified the result with the analytical result for the case of Gaussian beam with excellent agreement.
+
+For future work, we can attempt to include the effect of medium represented by its refraction index. We can also examine the efficiency of the numerical methods with increasing number of grid points. 
 
 # References
-[^1]: F.Shen and A. Wang, *Applied optics* **45**, 102-1110 (2006).
+[^1]: F.Shen and A. Wang, *Applied optics* **45**, 102-1110 (2006).  
+[^2]: J. W. Cooley and J. W. Tukey, Mathematics of Computation 19, 297-301 (1965).
+
