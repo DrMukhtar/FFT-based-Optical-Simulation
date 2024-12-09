@@ -52,11 +52,21 @@ $$
 S=\text{IFFT2}\left[\text{FFT2}\left(U\right)\cdot\times\text{FFT2}\left(H\right)\right]\left(L/N\right)^{2}.
 $$
 
-4. Function `\text{Overlap}` returns the overlap as the squared dot product between the initial mode and the propagated mode.
+4. Function `Overlap` returns the overlap as the squared dot product between the initial mode and the propagated mode.
 
-5. Function `\text{OverlapGauss}` returns the expected overlap for the case of Gaussian mode.
+5. Function `OverlapGauss` returns the expected overlap for the case of Gaussian mode.
 
-We make the simulation more realistic by choosing \text{\ensuremath{\mu}m} as unit for spatial parameters. Typically, `lam` is around one and w0 is around a hundred; we have tested the simulations for N=1000 and L=200.
+We make the simulation more realistic by choosing $\mu$m as unit for spatial parameters. Typically, `lam` is around one and w0 is around a hundred; we have tested the simulations for `N=1000` and `L=200`.
+
+# Discussion
+
+The case of the $(0,0)$ mode can be used to verify the quality of the method. The overlap between the initial mode and the propagated mode yields 
+
+$$
+\frac{4\left(1+s^{2}\right)}{\left|2+s^{2}-js\right|^{2}},
+$$
+
+where s=\text{dist}/z_{R} and j=\sqrt{-1}.Fig. [fig:overlap] depicts the overlaps for different propagation distances obtained from both simulation and analytical results; lam=1.55, w0=40. The discrepancy is weak for distance smaller than the Rayleigh length (\pi\text{w0}^{2}/\text{lam}).
 
 | ![image](img1.png) |
 |:--:|
