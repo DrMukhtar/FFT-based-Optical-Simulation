@@ -66,11 +66,11 @@ $$
 \frac{4\left(1+s^{2}\right)}{\left|2+s^{2}-js\right|^{2}},
 $$
 
-where $s=\text{dist}/z_{R}$ and $j=\sqrt{-1}$.Figure [^Figure-1] depicts the overlaps for different propagation distances obtained from both simulation and analytical results; `lam=1.55`, `w0=40`. The discrepancy is weak for distance smaller than the Rayleigh length ($\pi\text{w0}^{2}/\text{lam}$).
+where $s=\text{dist}/z_{R}$ and $j=\sqrt{-1}$.Figure [example] depicts the overlaps for different propagation distances obtained from both simulation and analytical results; `lam=1.55`, `w0=40`. The discrepancy is weak for distance smaller than the Rayleigh length ($\pi\text{w0}^{2}/\text{lam}$).
 
 | ![image](img1.png) |
 |:--:|
-| [^Figure-1]: The overlap between the initial mode and the propagated mode obtained from the simulation (points) and analytical results (line) |
+| [example]: #fig-anchor "The overlap between the initial mode and the propagated mode obtained from the simulation (points) and analytical results (line)" |
 # Conclusion
 
 # References
