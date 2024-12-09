@@ -8,5 +8,9 @@ This repository...
 
 # Numerical method
 
+![image](img1.png)
+
+# Conclusion
+
 # References
 
