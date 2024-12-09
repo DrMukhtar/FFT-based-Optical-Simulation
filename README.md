@@ -21,7 +21,9 @@ The csv file conains the following parameters:
 * input beam parameters:beam waist (w)), orders ($m, n$) of the Hermite-Gaussian mode, and potical wavelength (lam);
 * physical simulation parameter: propagation distance (dist).
 
-
+For every instance, it will show the overlap between the original mode and the propagated mode. Here is an example:  
+| Input: wavelength: 1.55um, waist: 40.0um, Hermite-Gaussian (2,2) mode |
+| Overlap after 0.5mm of propagation: 0.9598 |
 
 # Numerical method
 
