@@ -25,9 +25,10 @@ python3 BeamPropagation.py input.csv
 
 # Numerical method
 
-![The overlap between the initial mode and the propagated mode obtained from the simulation (points) and analytical results (line)](img1.png)
-
+| ![image](img1.png) |
+|:--:|
+| The overlap between the initial mode and the propagated mode obtained from the simulation (points) and analytical results (line) |
 # Conclusion
 
 # References
-[^1] F.Shen and A. Wang, *Applied optics* **45**, 102-1110 (2006).
+[^1]: F.Shen and A. Wang, *Applied optics* **45**, 102-1110 (2006).
