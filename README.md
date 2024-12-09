@@ -28,6 +28,13 @@ Input: wavelength: 1.55um, waist: 40.0um, Hermite-Gaussian (2,2) mode
 Overlap after 0.5mm of propagation: 0.9598 
 ```
 
+For Gaussian mode ($m=0, n=0$), it also shows the discrepancy with the analytical value. Here is an example:
+
+```
+```
+
+
+
 
 # Numerical method
 
